@@ -178,8 +178,16 @@ class PlateauScene: SKScene {
             //grid.position = CGPoint (x:frame.width / 8, y:-frame.height / 8)
             addChild(grid)
         }
-        if let hex = Hexagone(edgeSize: 80.0){
+        if let hex = Hexagone(edgeSize: 44.0){
             hex.position = CGPoint (x:0, y:0)
+            addChild(hex)
+        }
+        if let hex = Hexagone(edgeSize: 44.0){
+            hex.position = CGPoint (x:33, y:22)
+            addChild(hex)
+        }
+        if let hex = Hexagone(edgeSize: 44.0){
+            hex.position = CGPoint (x:66, y:44)
             addChild(hex)
         }
         
